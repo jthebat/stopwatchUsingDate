@@ -30,6 +30,7 @@ pauseBtn.addEventListener("click", ()=>{
 });
 resetBtn.addEventListener("click", ()=>{
     paused = true;
+    console.log(elapsedTime);
     clearInterval(intervalId);
     startTime = 0;
     elapsedTime = 0;
