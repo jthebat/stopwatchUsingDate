@@ -22,12 +22,15 @@
             <button id = "startBtn" class="timerBtn" ><i class="fa-solid fa-play"></i></button>
             <a id="pause" href="/"><i class="fa-solid fa-pause"></i></a>
         </div>   -->
-        
+       
+
         <button class="progress-clock__time-digit" data-unit="h" data-group="h" type="button">00</button>
                 <span class="progress-clock__time-colon">:</span>
-                <button class="progress-clock__time-digit" data-unit="m" data-group="m" type="button">00</button>
+        <button class="progress-clock__time-digit" data-unit="m" data-group="m" type="button">00</button>
                 <span class="progress-clock__time-colon">:</span>
-                <button class="progress-clock__time-digit" data-unit="s" data-group="s" type="button">00</button> 
+        <button class="progress-clock__time-digit" data-unit="s" data-group="s" type="button">00</button>
+
+        
         
         <svg class="progress-clock__rings" width="256" height="256" viewBox="0 0 256 256">
             <defs>
@@ -61,13 +64,12 @@
           </g>
         </svg>        
     </div>
-    <div id = "timeContainer">
-        <div id = "timeDisplay">00:00:00</div>
-            <button id = "startBtn" class="timerBtn">S</button>
-            <button id = "pauseBtn" class="timerBtn">P</button>
-            <button id = "resetBtn" class="timerBtn">R</button>        
+    <div class="control-box">                         
+        <button id = "pauseBtn" class="timerBtn"><i class="fa-solid fa-pause"></i></button>
+        <button id = "startBtn" class="timerBtn"><i class="fa-solid fa-play"></i></button>
+        <button id = "resetBtn" class="timerBtn"><i class="fa-solid fa-arrow-rotate-left"></i></button>
     </div>
-    
+       
     <script src="index.js"></script>    
 </body>
 </html>

@@ -6,7 +6,7 @@ const startBtn = document.querySelector("#startBtn");
 const pauseBtn = document.querySelector("#pauseBtn");
 const resetBtn = document.querySelector("#resetBtn");
 const cla = document.querySelectorAll(".progress-clock__ring-fill")
-console.log(startBtn,cla[2])
+// console.log(startBtn,cla[2])
 
 let startTime = 0;
 let elapsedTime = 0;
@@ -46,23 +46,17 @@ resetBtn.addEventListener("click", ()=>{
     hrs = 0;
     mins = 0;
     secs = 0;
-   
-    timeDisplay.textContent = "00:00:00";
+       
     const s = el.querySelector(`[data-unit="s"]`);
     const m = el.querySelector(`[data-unit="m"]`);
     const h = el.querySelector(`[data-unit="h"]`);
+    s.innerText = "00";
+    m.innerText = "00";
+    h.innerText = "00";
     cla[2].setAttribute("stroke-dashoffset","666")
     cla[1].setAttribute("stroke-dashoffset","565.5")
     cla[0].setAttribute("stroke-dashoffset","465")
-    console.log("fuck",s,"fuckyoutoo",ss)
-   
-       
-        s.innerText = "00";
-        m.innerText = "00";
-        h.innerText = "00";
-
-       
-    
+    // console.log("fuck",s,"fuckyoutoo",s) 
     
 });
 
@@ -118,7 +112,7 @@ function updateTime(){
     function pad(unit){
         return (("0" + unit).length > 2 ? unit : "0"+unit);
     }
-    timeDisplay.textContent = `${hrs}:${mins}:${secs}`;
+  
            // update the display
            units.forEach(u => {
             // rings
